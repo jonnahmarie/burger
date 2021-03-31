@@ -1,10 +1,11 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a burger logger that uses MySQL, Node.js, Express.js, Handlebars and a self-made ORM. It uses the MVC design pattern. This project is incomplete at the moment.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,6 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
     "mysql": "^2.18.1"
-  }
+  },
+  "devDependencies": {}
 }
