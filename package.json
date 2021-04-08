@@ -1,7 +1,7 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "This is a burger logger that uses MySQL, Node.js, Express.js, Handlebars and a self-made ORM. It uses the MVC design pattern. This project is incomplete at the moment.",
+  "description": "This is a burger logger that uses MySQL, Node.js, Express.js, Handlebars and a self-made ORM. It uses the MVC design pattern. This project is incomplete at the moment. Users are able to add a burger to a list and 'devour' it. That devoured burger gets moved to another list and is grayed-out.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,8 +12,8 @@
     "url": "git+https://github.com/jonnahmarie/burger.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jonnah Marie Pangilinan",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jonnahmarie/burger/issues"
   },
