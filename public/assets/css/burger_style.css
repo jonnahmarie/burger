@@ -1,7 +1,29 @@
+body {
+    background-color: #fef0d5 !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+
 .devoured {
     width: 85%;
+    background-color: #fcfcfc;
+    color: #d3d3d3;
+    padding: 10px;
 }
 
 .still-hungry {
     width: 70%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+#burger-img {
+    background-image: url('/assets/img/burger-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 40vh;
 }
