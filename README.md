@@ -4,7 +4,7 @@
 This is a burger logger that uses MySQL, Node.js, Express.js, Handlebars and a self-made ORM. It uses the MVC design pattern. This project is incomplete at the moment. Users are able to add a burger to a list and 'devour' it. That devoured burger gets moved to another list and is grayed-out.
 
 ## Installation
-# From your local machine
+### From your local machine
 - Clone the repository, then in order to run, install the dependencies by typing in your terminal:
 ```
 npm install
@@ -18,7 +18,7 @@ In your web browser, search for:
 localhost:8080
 ```
 
-# From the deployed application
+### From the deployed application
 No installation is necessary. Please access the deplyed app by visiting: [PLACEHOLDER](PLACEHOLDER)
 
 ## Usage
