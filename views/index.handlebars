@@ -1,34 +1,40 @@
-<h1>Burger Burger</h1>
+<div class="container">
+    <h1 class="text-center mb-5">Burger Burger</h1>
 
-<div id="burgers">
-    <ul>
-        {{#each burgers}}
-        {{#unless devoured}}
-        <span>{{this.id}}. {{this.burger_name}}</span>
-        <button type="button" class="eatburger" id="eatBtn" data-id="{{this.id}}" data-newDevoured="{{devoured}}">Gotta Eat It Now!</button>
-        {{/unless}}
-        {{/each}}
-    </ul>
-</div>
-
-<div id="devouredBurgers">
-    <ul>
-        {{#each burgers}}
-        {{#if devoured}}
-        <span readonly>{{this.id}}. {{this.burger_name}}</span>
-        {{/if}}
-        {{/each}}
-    </ul>
-</div>
-
-<div id="userInput">
-    <form class="create-form">
-        <div class="form-group">
-            <label for="burgerLabel" class="form-label">I think I'm hungry for...</label>
-            <textarea class="form-control" id="burgerInput" rows="2"></textarea>
+    <div class="row">
+        <div class="col" id="uneatenBurgers">
+            <ol>
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        {{> burgers/burger-block devoured=false}}
+                    {{/unless}}
+                {{/each}}
+            </ol>
+        </div> 
+        <div class="col" id="devouredBurgers">
+            <ol>
+                {{#each burgers}}
+                    {{#if devoured}}
+                        {{> burgers/burger-block devoured=true}}
+                    {{/if}}
+                {{/each}}
+            </ol>
         </div>
-        <div class="form-group">
-            <button type="submit" class="submitBurger" id="submitBtn">Submit</button>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <form class="create-form">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <label for="bu" class="input-group-text">I think I'm still hungry for...</label>
+                    </div>
+                    <input type="text" id="bu" name="burger_name" class="form-control">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                    </div>
+                </div>
+            </form>
         </div>
-    </form>
+    </div>
 </div>

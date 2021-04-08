@@ -1,0 +1,16 @@
+<li>
+
+	{{#if devoured}}
+		<div class="input-group mb-3">
+			<span class="border rounded pt-1 pb-1 pl-3 pr-3 devoured">{{this.burger_name}}</span>
+		</div>
+	{{else}}
+		<div class="input-group mb-3">
+			<span class="border rounded pt-1 pb-1 pl-3 pr-3 still-hungry">{{this.burger_name}}</span>
+			<div class="input-group-append">
+				<button type="button" class="btn btn-warning input-group-text eatBtn" data-id="{{this.id}}">Nom!</button>
+			</div>
+		</div>
+	{{/if}}
+
+</li>

@@ -11,7 +11,7 @@ const printQuestionMarks = num => {
 }
 
 const objToSql= ob => {
-    const arr = [];
+    var arr = [];
   
     for (var key in ob) {
       var value = ob[key];
@@ -37,7 +37,7 @@ const orm = {
       });
     },
     insertOne: (table, cols, vals, cb) => {
-      const queryString = "INSERT INTO " + table;
+      var queryString = "INSERT INTO " + table;
 
       queryString += " (";
       queryString += cols.toString();
@@ -55,7 +55,7 @@ const orm = {
       });
     },
     updateOne: (table, objColVals, condition, cb) => {
-      const queryString = "UPDATE " + table;
+      var queryString = "UPDATE " + table;
   
       queryString += " SET ";
       queryString += objToSql(objColVals);
