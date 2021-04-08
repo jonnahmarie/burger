@@ -19,7 +19,7 @@ localhost:8080
 ```
 
 ### From the deployed application
-No installation is necessary. Please access the deplyed app by visiting: [PLACEHOLDER](PLACEHOLDER)
+No installation is necessary. Please access the deplyed app by visiting: [https://damp-caverns-08709.herokuapp.com/](https://damp-caverns-08709.herokuapp.com/)
 
 ## Usage
 ![Screenshot of application](public/assets/img/screenshot.png)
