@@ -1,7 +1,7 @@
 # burger
 
 ## Description
-This is a burger logger that uses MySQL, Node.js, Express.js, Handlebars and a self-made ORM. It uses the MVC design pattern. This project is incomplete at the moment. Users are able to add a burger to a list and 'devour' it. That devoured burger gets moved to another list and is grayed-out.
+This is a burger logger that uses MySQL, Node.js, Express.js, Handlebars and a self-made ORM. It uses the MVC design pattern. Users are able to add burgers to a list and devour it. That devoured burger gets moved to another list and is grayed-out.
 
 ## Installation
 ### From your local machine
